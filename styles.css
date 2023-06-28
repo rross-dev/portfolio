@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:wght@200;400;500;600;700&family=Signika:wght@600;700&display=swap');
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#loading.hide {
+  display: none;
+}
+
+#loading-animation{
+  width: 100px;
+  position: absolute;
+  bottom: auto;
+  right: auto;
+}
+
+.loading-text{
+  font-weight: 500;
+  color: black;
+  margin-top: 160px;
+  font-size: 1.2rem;
+}
+
+.loading-text-inv{
+  color: white;
+  margin-top: 160px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#loading-inv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #100c08;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading-inv.hide {
+  display: none;
+}
+
+#loading-animation-inv{
+  width: 100px;
+  position: absolute;
+  bottom: auto;
+  right: auto;
+  filter: invert(1);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: -webkit-fill-available;
+  overflow-x: hidden;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+header {
+  z-index: 9999;
+  top:0;
+  position: sticky;
+  background-color: white;
+  color: #100c08;
+  height: 150px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  line-height: 1.2rem;
+}
+
+nav ul li {
+  font-size: 14px;
+  height: 100%;
+  margin-left: 35px;
+}
+
+nav ul li a {
+  display: block;
+  color: #100c08;
+  font-weight: 500;
+  text-decoration: none;
+  height: 100%;
+}
+
+nav ul li a:hover{
+  outline: none;
+cursor: pointer;
+  text-decoration: overline;
+  text-decoration-thickness: 5px;
+}
+
+nav ul li a.active,
+nav ul li a.active:hover {
+   outline: none;
+  cursor: pointer;
+  text-decoration: overline;
+  text-decoration-thickness: 5px;
+}
+
+.logo-container {
+  text-align: center;
+  position: absolute;
+  top: 45px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container .logo-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin-right: 10px;
+  margin-top: -10px;
+  max-width: 70px;
+}
+
+.logo-container .text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px; /* Adjust as needed */
+}
+
+
+.logo-container h1 {
+  font-weight: 500;
+  color: #100c08;
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.logo-container p {
+  font-weight: 400;
+  color: #100c08;
+  margin-top: -10px;
+  font-size: 0.9rem;
+}
+
+.project-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.project-thumbnails a {
+  margin:20px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.project-thumbnails img {
+  display: block;
+  width: 100%;
+  height: auto; /* Adjust the height to match your desired square size */
+  object-fit: cover;
+  transition: transform 0.2s ease-out;
+}
+
+
+.project-thumbnails a:hover img {
+  transform: scale(1.05);
+}
+
+.project-thumbnails .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  border-radius: 30px;
+   height: 1.5rem;
+}
+
+.project-thumbnails a:hover .overlay {
+  opacity: 1;
+}
+
+.project-thumbnails .overlay-content {
+  text-align: center;
+  color: #000;
+}
+
+.project-thumbnails .overlay-content h3 {
+  margin-left: 10px;
+  margin-top: 0;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.project-thumbnails .overlay-content h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: green;
+}
+
+
+.project-thumbnails .overlay-content p {
+  bottom: 0;
+  border:1px solid black;
+  display: inline-block;
+  background-color: #f8f8ff;
+  color: #100c08;
+  border-radius: 5px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.project-thumbnails .overlay-content h3:hover {
+   outline: none;
+  cursor: pointer;
+  text-decoration: overline;
+  text-decoration-thickness: 5px;
+}
+
+#github {
+  width: 30px;
+  padding: 10px;
+  margin-right: 25px;
+}
+#github:hover{
+  transform: scale(1.05);
+}
+
+footer {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: white;
+  color: #000;
+  text-align: right;
+  position: fixed;
+  padding-bottom: env(safe-area-inset-bottom);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+footer:hover{
+  opacity: 1;
+}
+
+footer a {
+  color: #39ff14;
+  text-decoration: none;
+}
+
+/* Remove the thin overline on mobile */
+a:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+a:focus{
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    background-color: transparent;
+  }
+
+
+@media only screen and (max-width: 600px) {
+#loading-animation{
+  width: 75px;
+  margin-top: 40px;
+  margin-right: 0;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: auto;
+  right: auto;
+}
+
+#loading-animation-inv{
+  width: 75px;
+  margin-top: 40px;
+  margin-right: 0;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: auto;
+  right: auto;
+}
+
+.loading-text{
+  font-size: 1rem;
+}
+
+.loading-text-inv{
+  font-size: 1rem;
+}
+
+#goofy-thumb{
+  margin-bottom: 80px;
+}
+
+  header{
+    top:-100px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-container {
+    margin-top: -20px;
+    right: auto;
+    margin-left: 40px;
+}
+
+ nav ul{
+margin-right: 35px;
+margin-top: 100px;
+ }
+
+ nav ul li a:hover{
+  outline: none;
+cursor: pointer;
+  text-decoration: none;
+}
+
+nav ul li a.active,
+nav ul li a.active:hover {
+   outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+  .project-thumbnails{
+     display: block;
+  }
+
+  .project-thumbnails img {
+  width: 100%;
+  height: auto; 
+  margin-bottom: 10px;
+}
+
+.project-thumbnails .overlay-content h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  /* CSS rules for medium screens */
+
+  #goofy-thumb{
+  margin-bottom: 80px;
+}
+
+  a:focus{
+    background-color: transparent;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+
+  .project-thumbnails{
+     display: block;
+  }
+
+  .project-thumbnails img {
+  width: 100%;
+  height: auto; 
+  margin-bottom: 10px;
+}
+
+.project-thumbnails .overlay-content h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* CSS rules for large screens */
+  #goofy-thumb{
+  margin-bottom: 180px;
+}
+
+  a:focus{
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .project-thumbnails{
+     display: block;
+  }
+
+  .project-thumbnails img {
+  width: 100%;
+  height: auto; 
+  margin-bottom: 10px;
+}
+
+.project-thumbnails .overlay-content h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* CSS rules for extra-large screens */
+.project-thumbnails .overlay-content h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+}
