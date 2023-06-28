@@ -358,7 +358,6 @@ cursor: pointer;
   text-decoration: none;
 }
 
-nav ul li a.active,
 nav ul li a.active:hover {
    outline: none;
   cursor: pointer;
@@ -411,6 +410,19 @@ nav ul li a.active:hover {
   font-weight: 500;
 }
 
+ nav ul li a:hover{
+  outline: none;
+cursor: pointer;
+  text-decoration: none;
+}
+
+nav ul li a.active:hover {
+   outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -437,6 +449,19 @@ nav ul li a.active:hover {
   font-size: 2rem;
   font-weight: 500;
 }
+
+ nav ul li a:hover{
+  outline: none;
+cursor: pointer;
+  text-decoration: none;
+}
+
+nav ul li a.active:hover {
+   outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
