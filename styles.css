@@ -21,7 +21,7 @@
 }
 
 #loading-animation{
-  width: 100px;
+  width: 150px;
   position: absolute;
   bottom: auto;
   right: auto;
@@ -30,13 +30,13 @@
 .loading-text{
   font-weight: 500;
   color: black;
-  margin-top: 160px;
+  margin-top: 200px;
   font-size: 1.2rem;
 }
 
 .loading-text-inv{
   color: white;
-  margin-top: 160px;
+  margin-top: 200px;
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -61,7 +61,7 @@
 }
 
 #loading-animation-inv{
-  width: 100px;
+  width: 150px;
   position: absolute;
   bottom: auto;
   right: auto;
@@ -131,6 +131,32 @@ nav ul li a.active:hover {
   text-decoration-thickness: 5px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
 .logo-container {
   text-align: center;
   position: absolute;
@@ -172,9 +198,81 @@ nav ul li a.active:hover {
   font-size: 0.9rem;
 }
 
+.portfolio-menu{
+width: 100%;
+justify-content: center;align-items:center;
+display: flex;
+position: absolute;
+top: 0;
+bottom: 0;
+}
+
+.section-title{
+  margin: 0 50px;
+  width: 10rem;
+  background-color: #100c08;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5rem;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 1rem;
+}
+
+.navbar a {
+  width: 12rem;
+  background-color: #100c08;
+  display: block;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.navbar a:hover {
+  transform: scale(1.05);
+  background-color: #8ff80a;
+  color: #100c08;
+  font-weight: 500;
+}
+
+.navbar a:active {
+  transform: scale(1.1);
+}
+
+
+
 .project-thumbnails {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+margin-bottom: 5rem;
+cursor: pointer;
 }
 
 .project-thumbnails a {
@@ -182,7 +280,6 @@ nav ul li a.active:hover {
   display: block;
   overflow: hidden;
   position: relative;
-
 }
 
 .project-thumbnails img {
@@ -211,11 +308,16 @@ nav ul li a.active:hover {
 
 .project-thumbnails a:hover .overlay {
   opacity: 1;
+
 }
 
 .project-thumbnails .overlay-content {
   text-align: center;
   color: #000;
+  outline: none;
+  cursor: pointer;
+  text-decoration: overline;
+  text-decoration-thickness: 5px;
 }
 
 .project-thumbnails .overlay-content h3 {
@@ -224,32 +326,104 @@ nav ul li a.active:hover {
   padding: 10px;
   font-size: 1.3rem;
   font-weight: 500;
+  background-color: white;
 }
 
-.project-thumbnails .overlay-content h4 {
-  font-size: 1rem;
-  font-weight: 400;
-  color: green;
-}
-
-
-.project-thumbnails .overlay-content p {
-  bottom: 0;
-  border:1px solid black;
-  display: inline-block;
-  background-color: #f8f8ff;
-  color: #100c08;
-  border-radius: 5px;
-  font-weight: 600;
-  width: 100%;
-}
-
-.project-thumbnails .overlay-content h3:hover {
-   outline: none;
+.project-thumbnails2 {
+  width: 80%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  margin-bottom: 60px;
   cursor: pointer;
-  text-decoration: overline;
-  text-decoration-thickness: 5px;
 }
+
+
+.project-thumbnails2 img {
+  margin: 5rem auto;
+  display: block;
+  width: 200px;
+  height: 200px; /* Adjust the height to match your desired square size */
+  object-fit: cover;
+  transition: transform 0.2s ease-out;
+}
+
+
+.project-thumbnails img:hover {
+  transform: scale(1.05);
+}
+.project-thumbnails2 img:hover {
+  transform: scale(1.5);
+}
+
+.project-thumbnails3 {
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+
+.project-thumbnails3 img {
+  margin: 5rem auto;
+  display: block;
+  width: 350px;
+  height: 350px; /* Adjust the height to match your desired square size */
+  object-fit: cover;
+  transition: transform 0.2s ease-out;
+}
+
+.project-thumbnails3 img:hover {
+  transform: scale(1.2);
+}
+
+.fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    z-index: 9999;
+}
+
+.fullscreen-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.exit-fullscreen-button {
+  background-color: black;
+  color:white;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.goofy-vid{
+  border-radius: 5px;
+}
+
+.goofy-mobile-vid{
+  height: 55vh;
+  border-radius: 5px;
+}
+
 
 #github {
   width: 30px;
@@ -303,7 +477,7 @@ a:focus{
 
 @media only screen and (max-width: 600px) {
 #loading-animation{
-  width: 75px;
+  width: 130px;
   margin-top: 40px;
   margin-right: 0;
   margin-bottom: 0;
@@ -313,7 +487,7 @@ a:focus{
 }
 
 #loading-animation-inv{
-  width: 75px;
+  width: 130px;
   margin-top: 40px;
   margin-right: 0;
   margin-bottom: 0;
@@ -323,11 +497,11 @@ a:focus{
 }
 
 .loading-text{
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .loading-text-inv{
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 #goofy-thumb{
@@ -347,6 +521,70 @@ a:focus{
     margin-left: 40px;
 }
 
+.section-title{
+  margin: 40px auto;
+  margin-bottom: 40px;
+}
+
+.portfolio-menu{
+width: 100%;
+justify-content: center;
+align-items:center;
+display: flex;
+position: relative;
+top: none;
+bottom: none;
+}
+
+  
+  .navbar {
+    margin-top: 30px;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+      pointer-events: none;
+      transition: opacity 0.3s ease-in-out;
+      /* remove height property */
+      pointer-events: auto;
+      margin-bottom: 60px;
+  }
+
+
+  .navbar ul {
+        
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .navbar li {
+        margin: 1rem;
+      }
+
+      
+
+      .navbar a {
+        width: 14rem;
+        background-color: black;
+        display: block;
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 5rem;
+        transition: all 0.15s ease-in-out;
+    }
+
+    .navbar a:hover {
+      transform: scale(1.05);
+      background-color: #8ff80a;
+      color: black;
+    }
+    .navbar a:active {
+      transform: scale(1.1);
+    }
+
+
  nav ul{
 margin-right: 35px;
 margin-top: 100px;
@@ -358,6 +596,7 @@ cursor: pointer;
   text-decoration: none;
 }
 
+nav ul li a.active,
 nav ul li a.active:hover {
    outline: none;
   cursor: pointer;
@@ -378,6 +617,19 @@ nav ul li a.active:hover {
   font-size: 1rem;
   font-weight: 500;
 }
+
+  .project-thumbnails2{
+     display: block;
+     pointer-events: none;
+  }
+
+  .project-thumbnails2 img {
+  width: 100%;
+  height: auto; 
+  margin-bottom: 10px;
+}
+
+
 
 }
 
@@ -410,19 +662,10 @@ nav ul li a.active:hover {
   font-weight: 500;
 }
 
- nav ul li a:hover{
-  outline: none;
-cursor: pointer;
-  text-decoration: none;
+.project-thumbnails2 {
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  pointer-events: none;
 }
-
-nav ul li a.active:hover {
-   outline: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -449,18 +692,12 @@ nav ul li a.active:hover {
   font-size: 2rem;
   font-weight: 500;
 }
-
- nav ul li a:hover{
-  outline: none;
-cursor: pointer;
-  text-decoration: none;
+.project-thumbnails2 {
+  width: 90%;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  pointer-events: none;
 }
 
-nav ul li a.active:hover {
-   outline: none;
-  cursor: pointer;
-  text-decoration: none;
-}
 
 }
 

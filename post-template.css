@@ -62,10 +62,19 @@ body{
 
     .right-side img{
       width: 50vw;
+      cursor: pointer;
     }
+   
 
     .right-side video{
       width: 50vw;
+    }
+
+    .rs-nft {
+      display: flex;
+    }
+    .rs-nft img{
+      width: 27vw;
     }
 
 
@@ -87,7 +96,7 @@ body{
   background-color: #555; /* Adjust the color of the scrollbar thumb on hover */
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
   .big-container {
     padding: 30px;
     flex-direction: column;
@@ -130,9 +139,16 @@ body{
       width: 27px;
     }
    
+   .rs-nft {
+      display: block;
+    }
+    .rs-nft img{
+      width: 80vw;
+      pointer-events: none;
+    }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   /* CSS rules for medium screens */
 
   .big-container {
@@ -176,6 +192,13 @@ body{
 
     #openlink{
       width: 27px;
+    }
+    .rs-nft {
+      display: block;
+    }
+    .rs-nft img{
+      width: 80vw;
+      pointer-events: none;
     }
  
 }
@@ -223,6 +246,13 @@ body{
 
     #openlink{
       width: 27px;
+    }
+    .rs-nft {
+      display: block;
+    }
+    .rs-nft img{
+      width: 80vw;
+      pointer-events: none;
     }
 }
 

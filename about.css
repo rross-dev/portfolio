@@ -18,6 +18,9 @@ main {
 
 .middle{
 	width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .middle .image-box{
   padding: 4%;
@@ -79,7 +82,7 @@ li{
 }
 
 #apps {
-  width: 100%;
+  width: 650px;
   height: auto;
 	filter:invert(0.6);
 }

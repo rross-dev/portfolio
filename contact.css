@@ -62,6 +62,7 @@ h1{
 }
 
 p img{
+  transition: 0.2s ease-in-out;
   margin-top: -1rem;
 }
 
@@ -79,6 +80,10 @@ p img{
 #linkedin{
   width: 33px;
   filter: invert(1);
+}
+
+p img:hover{
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 576px) {

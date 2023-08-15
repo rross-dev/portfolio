@@ -1,0 +1,110 @@
+.skateboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+margin-top: 4rem;
+margin-bottom: 4rem;
+
+}
+
+.skateboard-grid a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.skateboard-grid img {
+  display: block;
+  width: 100%;
+  height: auto; /* Adjust the height to match your desired square size */
+  object-fit: cover;
+  transition: transform 0.2s ease-out;
+}
+
+
+.skateboard-grid a:hover img {
+  transform: scale(1.02);
+}
+
+.skateboard-grid .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  border-radius: 30px;
+   height: 1.5rem;
+}
+
+.skateboard-grid a:hover .overlay {
+  opacity: 1;
+
+}
+
+.skateboard-grid .overlay-content {
+  text-align: center;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  text-decoration: overline;
+  text-decoration-thickness: 5px;
+}
+
+.skateboard-grid .overlay-content h3 {
+  margin-left: 10px;
+  margin-top: 0;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+@media only screen and (max-width: 600px) {
+.skateboard-grid {
+  display: block;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+.skateboard-grid img {
+  margin-bottom: 50px;
+}
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+.skateboard-grid {
+  display: block;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+.skateboard-grid img {
+  margin-bottom: 50px;
+}
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+.skateboard-grid {
+  display: block;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+.skateboard-grid img {
+  margin-bottom: 100px;
+}
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+.skateboard-grid {
+  display: block;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+.skateboard-grid img {
+  margin-bottom: 100px;
+}
+}
