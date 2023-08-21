@@ -242,6 +242,7 @@ bottom: 0;
   margin: 1rem;
 }
 
+
 .navbar a {
   width: 12rem;
   background-color: #100c08;
@@ -536,6 +537,9 @@ top: none;
 bottom: none;
 }
 
+.dropdown:hover .dropdown-content{
+  display: none;
+}
   
   .navbar {
     margin-top: 30px;
@@ -563,7 +567,7 @@ bottom: none;
       
 
       .navbar a {
-        width: 14rem;
+        width: 70vw;
         background-color: black;
         display: block;
         padding: 1rem;
@@ -600,7 +604,6 @@ nav ul li a.active,
 nav ul li a.active:hover {
    outline: none;
   cursor: pointer;
-  text-decoration: none;
 }
 
   .project-thumbnails{
@@ -635,6 +638,10 @@ nav ul li a.active:hover {
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   /* CSS rules for medium screens */
+
+.dropdown:hover .dropdown-content{
+  display: none;
+}
 
   #goofy-thumb{
   margin-bottom: 80px;
@@ -672,6 +679,10 @@ nav ul li a.active:hover {
   /* CSS rules for large screens */
   #goofy-thumb{
   margin-bottom: 180px;
+}
+
+.dropdown:hover .dropdown-content{
+  display: none;
 }
 
   a:focus{
