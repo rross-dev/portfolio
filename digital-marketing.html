@@ -18,17 +18,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://rross.dev/images/twitter-image.jpg">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="post-template.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="main.js"></script>
   </head>
   <body>
-    <div id="loading-inv">
-      <img src="/images/loading.gif" id="loading-animation-inv">
-      <div class="loading-text-inv">
+    <div id="loading">
+      <img src="/images/loading.gif" id="loading-animation">
+      <div class="loading-text">
         Loading . . .
       </div>
-    </div>
     </div>
     <div id="content" style="display: none;">
   </div>
@@ -65,32 +63,36 @@
         </nav>
     </header>
     <main>
-      <div class="big-container">
-        <div class="left-side">
-          <h2>DIGITAL MARKETING</h2>
-          <p>
-             I worked a digital marketing/graphic design gig in 2018 at a popular brewery called 7 Hills. Some of my work included designing posters, menus, web pages, and more.
-             <br></br>
-             Since then, I have created various digital marketing advertisements and campaigns for my own entrepreneurial ventures. My work includes graphics and short form video content.
-          </p>
-          
-        </div>
-        <div class="right-side">
-          <div class="rs-nft">
-            <img src="/images/dm/bloktoberfest.jpg">
-            <img src="/images/dm/headforthehills.jpg">
-          </div>
-        </div>
+      <div class="section-title">
+        Digital Marketing
       </div>
-      <div class="fullscreen-overlay">
+      <section class="project-thumbnails4">   
+          <img src="/images/dm/bloktoberfest.jpg">
+          <img src="/images/dm/headforthehills.jpg">
+          <img src="/images/dm/1.gif">
+          <img src="/images/dm/6.jpg">
+          <img src="/images/dm/5.jpg">
+          <a href="/images/dm/1.mp4" target="imgBox">
+            <video src="/images/dm/1.mp4" autoplay loop muted disablePictureInPicture playsinline>
+            </video></a>
+            <a href="/images/dm/2.mp4" target="imgBox">
+            <video src="/images/dm/2.mp4" autoplay loop muted disablePictureInPicture playsinline>
+            </video></a>
+            <a href="/images/dm/sr4.mp4" target="imgBox">
+            <video src="/images/dm/sr4.mp4" autoplay loop muted disablePictureInPicture playsinline>
+            </video></a>
+            <img src="/images/dm/sr0.jpg">
+            <img src="/images/dm/sr2.jpg">
+            <img src="/images/dm/sr3.jpg">
+            <img src="/images/dm/sr1.gif">
+            
+</section>
+<div class="fullscreen-overlay">
       <button class="exit-fullscreen-button">X</button>
         <div class="fullscreen-content">
             <img class="fullscreen-image" src="" alt="Fullscreen Image">
         </div>
     </div>
     </main>
-    <!--<footer>
-  <a href="https://github.com/rross-dev/portfolio"><img src="/images/github-black.png" id="github"></a>
-</footer>!-->
   </body>
 </html>

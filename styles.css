@@ -382,6 +382,43 @@ cursor: pointer;
   transform: scale(1.2);
 }
 
+.project-thumbnails4 {
+  width: 80%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  margin-bottom: 60px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+
+.project-thumbnails4 img {
+  margin: 3rem auto;
+  display: block;
+  max-width: 300px;
+  max-height: 300px; /* Adjust the height to match your desired square size */
+  object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.project-thumbnails4 img:hover {
+  transform: scale(1.1);
+}
+
+.project-thumbnails4 video {
+  margin: 5rem auto;
+  display: block;
+  width: 300px;
+  height: auto; /* Adjust the height to match your desired square size */
+  object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.project-thumbnails4 video:hover {
+  transform: scale(1.1);
+}
+
 .fullscreen-overlay {
     display: none;
     position: fixed;
@@ -402,9 +439,10 @@ cursor: pointer;
 }
 
 .fullscreen-image {
-    max-width: 90%;
-    max-height: 90%;
+    max-height: 95vh;
+    max-width: 95vw;
 }
+
 
 .exit-fullscreen-button {
   background-color: black;
@@ -642,6 +680,21 @@ nav ul li a.active:hover {
   margin-bottom: 10px;
 }
 
+ .project-thumbnails4{
+     display: block;
+  }
+
+  .project-thumbnails4 img {
+  width: auto;
+  height: 100%; 
+  margin-bottom: 10px;
+}
+
+.project-thumbnails4 video {
+  width: 100%;
+  height: auto; 
+  margin-bottom: 10px;
+}
 
 
 }
