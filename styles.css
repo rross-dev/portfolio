@@ -253,7 +253,7 @@ bottom: 0;
   text-decoration: none;
   color: white;
   border-radius: 5rem;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar a:hover {
@@ -265,6 +265,7 @@ bottom: 0;
 
 .navbar a:active {
   transform: scale(1.1);
+  background-color: #8ff80a;
 }
 
 
@@ -281,6 +282,7 @@ cursor: pointer;
   display: block;
   overflow: hidden;
   position: relative;
+  transition: 0.3s ease-in-out;
 }
 
 .project-thumbnails img {
@@ -305,6 +307,7 @@ cursor: pointer;
   transition: opacity 0.2s ease-out;
   border-radius: 30px;
    height: 1.5rem;
+   transition: 0.3s ease-in-out;
 }
 
 .project-thumbnails a:hover .overlay {
@@ -337,6 +340,7 @@ cursor: pointer;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   margin-bottom: 60px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 
@@ -346,7 +350,7 @@ cursor: pointer;
   width: 200px;
   height: 200px; /* Adjust the height to match your desired square size */
   object-fit: cover;
-  transition: transform 0.2s ease-out;
+  transition: transform 0.3s ease-out;
 }
 
 
@@ -523,6 +527,7 @@ a:focus{
 }
 
 .section-title{
+  width: 70vw;
   margin: 40px auto;
   margin-bottom: 40px;
 }
@@ -576,17 +581,21 @@ bottom: none;
         text-decoration: none;
         color: white;
         border-radius: 5rem;
-        transition: all 0.15s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
-    .navbar a:hover {
-      transform: scale(1.05);
-      background-color: #8ff80a;
-      color: black;
-    }
-    .navbar a:active {
-      transform: scale(1.1);
-    }
+.navbar a:hover {
+  transform: scale(1.05);
+  background-color: #8ff80a;
+  color: #100c08;
+  font-weight: 500;
+}
+
+.navbar a:active {
+  transform: scale(1.1);
+  background-color: #8ff80a;
+}
+
 
 
  nav ul{
@@ -604,6 +613,7 @@ nav ul li a.active,
 nav ul li a.active:hover {
    outline: none;
   cursor: pointer;
+
 }
 
   .project-thumbnails{
