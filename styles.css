@@ -21,7 +21,7 @@
 }
 
 #loading-animation{
-  width: 150px;
+  width: 100px;
   position: absolute;
   bottom: auto;
   right: auto;
@@ -30,13 +30,13 @@
 .loading-text{
   font-weight: 500;
   color: black;
-  margin-top: 200px;
+  margin-top: 150px;
   font-size: 1.2rem;
 }
 
 .loading-text-inv{
   color: white;
-  margin-top: 200px;
+  margin-top: 150px;
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -61,7 +61,7 @@
 }
 
 #loading-animation-inv{
-  width: 150px;
+  width: 100px;
   position: absolute;
   bottom: auto;
   right: auto;
@@ -236,7 +236,7 @@ bottom: 0;
   text-align: center;
   text-decoration: none;
   color: white;
-  border-radius: 5rem;
+  border-radius: 1rem;
   margin-bottom: 20px;
 }
 
@@ -272,7 +272,7 @@ bottom: 0;
   text-align: center;
   text-decoration: none;
   color: white;
-  border-radius: 5rem;
+  border-radius: 1rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -546,7 +546,7 @@ a:focus{
 
 @media only screen and (max-width: 600px) {
 #loading-animation{
-  width: 130px;
+  width: 75px;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
@@ -556,7 +556,7 @@ a:focus{
 }
 
 #loading-animation-inv{
-  width: 130px;
+  width: 75px;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
@@ -566,11 +566,13 @@ a:focus{
 }
 
 .loading-text{
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-top: 100px;
 }
 
 .loading-text-inv{
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-top: 100px;
 }
 
 #goofy-thumb{
@@ -620,7 +622,7 @@ a:focus{
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  top:3px; 
+  top:4px; 
 }
 
 .logo-container h1 {
@@ -635,7 +637,7 @@ a:focus{
   font-weight: 400;
   color: #100c08;
   margin-top: -10px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 
 }
 
@@ -693,7 +695,7 @@ bottom: none;
         text-align: center;
         text-decoration: none;
         color: white;
-        border-radius: 5rem;
+        border-radius: 1rem;
         transition: all 0.3s ease-in-out;
     }
 
@@ -818,6 +820,7 @@ nav ul li a.active:hover {
 
  .project-thumbnails4{
      display: block;
+     pointer-events: none;
   }
 
   .project-thumbnails4 img {
