@@ -207,6 +207,26 @@ top: 0;
 bottom: 0;
 }
 
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 20px;
+  height: 2.5px;
+  margin:4px auto;
+  -webkit-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.nav-menu{
+  display: none;
+}
+
 .section-title{
   margin: 0 50px;
   width: 10rem;
@@ -292,11 +312,14 @@ cursor: pointer;
   object-fit: cover;
   transition: transform 0.2s ease-out;
 }
-
+.project-thumbnails img:hover {
+  transform: scale(1.03);
+}
 
 .project-thumbnails a:hover img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
+
 
 .project-thumbnails .overlay {
   position: absolute;
@@ -354,9 +377,7 @@ cursor: pointer;
 }
 
 
-.project-thumbnails img:hover {
-  transform: scale(1.05);
-}
+
 .project-thumbnails2 img:hover {
   transform: scale(1.5);
 }
@@ -443,6 +464,11 @@ cursor: pointer;
     max-width: 95vw;
 }
 
+.fullscreen-image:hover{
+  cursor: -webkit-zoom-in;
+   cursor: zoom-in;
+}
+
 
 .exit-fullscreen-button {
   background-color: black;
@@ -455,7 +481,7 @@ cursor: pointer;
   right: 20px;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .goofy-vid{
@@ -521,7 +547,7 @@ a:focus{
 @media only screen and (max-width: 600px) {
 #loading-animation{
   width: 130px;
-  margin-top: 40px;
+  margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
   position: absolute;
@@ -531,7 +557,7 @@ a:focus{
 
 #loading-animation-inv{
   width: 130px;
-  margin-top: 40px;
+  margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
   position: absolute;
@@ -552,21 +578,70 @@ a:focus{
 }
 
   header{
-    top:-100px;
-    height: 150px;
+    top:0;
+    height: 50px;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    position: fixed;
   }
 
-  .logo-container {
-    margin-top: -20px;
-    right: auto;
-    margin-left: 40px;
+  body{
+    margin-top:40px;
+  }
+
+.logo-container {
+  top:0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.logo-container .logo-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  display: block;
+  position: fixed;
+  top: 20px;
+  left:15px;
+  max-width: 30px;
+}
+
+.logo-container .text-container {
+   display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top:3px; 
+}
+
+.logo-container h1 {
+  font-weight: 500;
+  color: #100c08;
+  margin: 0;
+  font-size: 1.3rem;
+
+}
+
+.logo-container p {
+  font-weight: 400;
+  color: #100c08;
+  margin-top: -10px;
+  font-size: 0.8rem;
+
 }
 
 .section-title{
-  width: 70vw;
-  margin: 40px auto;
+  width: 60vw;
+  margin: 80px auto;
   margin-bottom: 40px;
 }
 
@@ -610,7 +685,7 @@ bottom: none;
       
 
       .navbar a {
-        width: 70vw;
+        width: 60vw;
         background-color: black;
         display: block;
         padding: 1rem;
@@ -634,7 +709,9 @@ bottom: none;
   background-color: #8ff80a;
 }
 
-
+nav ul li {
+  height: auto;
+}
 
  nav ul{
 margin-right: 35px;
@@ -651,7 +728,66 @@ nav ul li a.active,
 nav ul li a.active:hover {
    outline: none;
   cursor: pointer;
+  text-decoration-thickness: 2.5px;
+}
 
+
+.hamburger{
+  display: block;
+  position: fixed;
+  top: 12px;
+  right:15px;
+  z-index: 10000;
+}
+.hamburger.active .bar{
+  background-color:white;
+  transition: 0.3s;
+}
+
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(6.5px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-6.5px) rotate(-46deg);
+}
+
+.nav-menu-og{
+  display: none;
+}
+.nav-menu{
+  display: flex;
+  position: fixed;
+  right:-100%;
+  top:0;
+  gap:0;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.9);
+  width: 45vw;
+  transition: 0.3s;
+  margin: 0;
+}
+
+.nav-menu a{
+  color: white;
+  font-size: 0.9rem;
+  margin-left: 16px;
+}
+.nav-menu-text{
+  margin-top: 50px;
+  width: 100%;
+}
+
+.nav-item{
+  margin:16px 0;
+  height: 30px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.nav-menu.active{
+  right:0;
 }
 
   .project-thumbnails{

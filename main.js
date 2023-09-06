@@ -12,6 +12,8 @@ window.addEventListener('load', function () {
   }, 1000); // 2000 milliseconds = 2 seconds
 });
 
+
+
 $(document).ready(function() {
     const projectThumbnails = document.querySelectorAll('.project-thumbnails img');
     const projectThumbnails2 = document.querySelectorAll('.project-thumbnails2 img');
@@ -67,3 +69,4 @@ $(document).ready(function() {
         }
     });
 });
+
