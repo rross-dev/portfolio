@@ -21,7 +21,7 @@
 }
 
 #loading-animation{
-  width: 100px;
+  width: 75px;
   position: absolute;
   bottom: auto;
   right: auto;
@@ -30,13 +30,13 @@
 .loading-text{
   font-weight: 500;
   color: black;
-  margin-top: 150px;
+  margin-top: 125px;
   font-size: 1.2rem;
 }
 
 .loading-text-inv{
   color: white;
-  margin-top: 150px;
+  margin-top: 125px;
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -61,7 +61,7 @@
 }
 
 #loading-animation-inv{
-  width: 100px;
+  width: 75px;
   position: absolute;
   bottom: auto;
   right: auto;
