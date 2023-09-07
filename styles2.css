@@ -1,9 +1,9 @@
 .skateboard-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
-margin-top: 4rem;
-margin-bottom: 4rem;
 transition: 0.3s ease-in-out;
+width: 80vw;
+margin: 50px auto;
 }
 
 .skateboard-grid a {
@@ -32,7 +32,6 @@ transition: 0.3s ease-in-out;
   left: 0;
   display: flex;
   opacity: 0;
-  transition: opacity 0.2s ease-out;
   border-radius: 30px;
    height: 1.5rem;
    transition: 0.3s ease-in-out;
@@ -56,7 +55,7 @@ transition: 0.3s ease-in-out;
   margin-left: 10px;
   margin-top: 0;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -66,11 +65,21 @@ transition: 0.3s ease-in-out;
   display: block;
 margin-top: 1rem;
 margin-bottom: 4rem;
+width: auto;
+margin: 100px auto;
 }
 
 .skateboard-grid img {
   margin-bottom: 3rem;
 }
+.skateboard-grid .overlay-content h3 {
+  margin-left: 10px;
+  margin-top: 0;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
 }
 
 
