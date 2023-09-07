@@ -47,8 +47,6 @@ margin: 50px auto;
   color: #000;
   outline: none;
   cursor: pointer;
-  text-decoration: overline;
-  text-decoration-thickness: 5px;
 }
 
 .skateboard-grid .overlay-content h3 {
