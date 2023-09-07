@@ -228,6 +228,13 @@ bottom: 0;
   display: none;
 }
 
+.greeting{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 50px auto;
+}
+
 .section-title{
   margin-bottom: 0;
   padding: 0;
@@ -263,6 +270,7 @@ bottom: 0;
   right: auto;
   color: white;
   font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .navbar {
@@ -606,6 +614,15 @@ a:focus{
   margin-bottom: 80px;
 }
 
+.greeting{
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+
+}
+
   header{
     top:0;
     height: 50px;
@@ -628,10 +645,11 @@ a:focus{
 .rtn-arw-inv{
   display: block;
   position: absolute;
-  top: 55px;
+  top: 70px;
   left: auto;
   right: 15px;
   filter: invert(1);
+  z-index: 9998;
 }
 .rtn-arw-inv-text{
  display: none;
