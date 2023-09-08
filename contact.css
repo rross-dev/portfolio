@@ -103,13 +103,13 @@ p img:hover{
   position: sticky;
       width: 100%;
       background-color: #100c08;
-      margin-top: 20px;
+      margin-top: 60px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
     }
 
     h1{
-      font-size: 2.6rem;
+      font-size: 2.4rem;
       margin-bottom: 40px;
   }    
 
@@ -118,6 +118,19 @@ p img:hover{
       height: calc(100vh-180px);
   flex:1;
     }
+
+    #email-logo{
+  width: 31px;
+}
+
+#github3{
+  width: 31px;
+}
+
+#linkedin{
+  width: 29px;
+}
+
 
 }
 

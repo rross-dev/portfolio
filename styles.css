@@ -229,10 +229,7 @@ bottom: 0;
 }
 
 .greeting{
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-align: center;
-  margin: 50px auto;
+  display: none;
 }
 
 .section-title{
@@ -243,18 +240,18 @@ bottom: 0;
   color:black;
   font-weight: 600;
   font-size: 1rem;
-  position: fixed;
-  bottom: 55px;
-  right: 30px;
+  position: absolute;
+  top: 165px;
+  left: 35px;
   width: auto;
   z-index: 9998;
 }
 
 .rtn-arw{
      display: block;
-  position: fixed;
-  bottom: 25px;
-  right:30px;
+  position: absolute;
+  top: 165px;
+  right:35px;
   z-index: 9999;
 }
 
@@ -262,7 +259,7 @@ bottom: 0;
    display: block;
   position: fixed;
   top: 165px;
-  right:50px;
+  right:35px;
   filter: invert(1);
 }
 
@@ -378,7 +375,7 @@ margin: 20px auto;
   margin-left: 10px;
   margin-top: 0;
   padding: 10px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
   background-color: white;
 }
@@ -433,19 +430,21 @@ margin: 20px auto;
 .project-thumbnails4 {
   width: 80%;
   display: grid;
-  margin: 0 auto;
+  margin: 50px auto;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   margin-bottom: 60px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .project-thumbnails4 img {
   margin: 3rem auto;
   display: block;
-  max-width: 300px;
-  max-height: 300px; /* Adjust the height to match your desired square size */
+  width: 80%;
+  height: auto; /* Adjust the height to match your desired square size */
   object-fit: cover;
   transition: transform 0.3s ease-out;
 }
@@ -457,7 +456,7 @@ margin: 20px auto;
 .project-thumbnails4 video {
   margin: 5rem auto;
   display: block;
-  width: 300px;
+  width: 80%;
   height: auto; /* Adjust the height to match your desired square size */
   object-fit: cover;
   transition: transform 0.3s ease-out;
@@ -607,6 +606,7 @@ a:focus{
 }
 
 .greeting{
+  display: block;
   font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
@@ -631,7 +631,7 @@ a:focus{
 .rtn-arw{
   display: block;
   position: absolute;
-  top: 55px;
+  top: 60px;
   right: 15px;
 }
 .rtn-arw-inv{
@@ -702,7 +702,7 @@ a:focus{
   font-weight: 600;
   font-size: 1rem;
   position: absolute;
-  top: 55px;
+  top: 60px;
   left: 15px;
   bottom: auto;
   right: auto;
@@ -883,14 +883,14 @@ nav ul li a.active:hover {
 }
 
  .project-thumbnails4{
-  margin-top: 125px;
+  margin-top: 150px;
      display: block;
      pointer-events: none;
   }
 
   .project-thumbnails4 img {
-  width: auto;
-  height: 100%; 
+  width: 100%;
+  height: auto; 
   margin-bottom: 10px;
 }
 
