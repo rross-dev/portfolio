@@ -906,6 +906,10 @@ nav ul li a.active:hover {
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   /* CSS rules for medium screens */
 
+  header{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+
 .dropdown:hover .dropdown-content{
   display: none;
 }
@@ -940,10 +944,38 @@ nav ul li a.active:hover {
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   pointer-events: none;
 }
+
+.project-thumbnails4 {
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
+  pointer-events: none;
+}
+
+.rtn-arw-inv{
+  display: block;
+  position: absolute;
+  top: 170px;
+  left: auto;
+  right: 35px;
+  filter: invert(1);
+  z-index: 9998;
+}
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   /* CSS rules for large screens */
+header{
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.rtn-arw-inv{
+  display: block;
+  position: absolute;
+  top: 170px;
+  left: auto;
+  right: 35px;
+  filter: invert(1);
+  z-index: 9998;
+}
   #goofy-thumb{
   margin-bottom: 180px;
 }
@@ -973,6 +1005,10 @@ nav ul li a.active:hover {
 .project-thumbnails2 {
   width: 90%;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
+  pointer-events: none;
+}
+.project-thumbnails4 {
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
   pointer-events: none;
 }
 
