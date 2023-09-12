@@ -727,7 +727,6 @@ bottom: none;
   display: flex;
    justify-content: center;
    align-items: center;
-      pointer-events: none;
       transition: opacity 0.3s ease-in-out;
       /* remove height property */
       pointer-events: auto;
