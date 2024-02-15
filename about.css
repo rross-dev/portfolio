@@ -18,8 +18,8 @@ main {
 
 .middle{
   display: flex;
+  margin-top: 20px;
   justify-content: center;
-  align-items: center;
 }
 
 
@@ -82,7 +82,8 @@ li{
   width: 650px;
   height: auto;
 	filter:invert(0.6);
-}
+
+ }
 
 
 @media only screen and (max-width: 576px) {
@@ -99,14 +100,14 @@ li{
   
   .left-side {
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .left-side h1{
   	margin: 0;
   }
 
   .middle{
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   .right-side{
@@ -125,6 +126,7 @@ li{
   	margin: 0;
   	width: 100%;
   	height: auto;
+    transform: scale(1.1);
   	
   }
 }
@@ -158,6 +160,7 @@ li{
     right: 0;
   	margin: 0;
   }
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -192,8 +195,6 @@ li{
     margin: 0;
     width: 100%;
     height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
 
@@ -221,8 +222,5 @@ li{
   margin-bottom: -12px;
 }
 
-#apps {
-  width: 550px;
-  height: auto;
-}
+
 }

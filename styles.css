@@ -337,7 +337,7 @@ margin: 20px auto;
 .project-thumbnails img {
   display: block;
   width: 100%;
-  height: auto; /* Adjust the height to match your desired square size */
+  height: auto; 
   object-fit: cover;
   transition: transform 0.2s ease-out;
 }
@@ -379,7 +379,7 @@ margin: 20px auto;
   margin-top: 0;
   padding: 10px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   background-color: white;
 }
 
@@ -399,13 +399,13 @@ margin: 20px auto;
   width: 80%;
   height: auto; /* Adjust the height to match your desired square size */
   object-fit: cover;
-  transition: transform 0.18s ease-out;
+  transition: transform 0.3s ease-out;
 }
 
 
 
 .project-thumbnails2 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .project-thumbnails3 {
@@ -490,7 +490,7 @@ margin: 20px auto;
 
 
 .project-thumbnails5 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .fullscreen-overlay {
@@ -1078,7 +1078,11 @@ header{
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-  /* CSS rules for extra-large screens */
+  /* CSS rules for extra-large screens - iPad */
+
+  .dropdown:hover .dropdown-content{
+  display: none;
+}
 .project-thumbnails .overlay-content h3 {
   font-size: 1rem;
   font-weight: 500;
@@ -1095,6 +1099,12 @@ header{
   transform: scale(1.1);
   background-color: #100c08;
   color:white;
+}
+.project-thumbnails2 {
+  pointer-events: none;
+}
+.project-thumbnails4 {
+  pointer-events: none;
 }
 
 }
