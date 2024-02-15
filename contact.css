@@ -1,0 +1,228 @@
+body {
+  background-color: #100c08;
+}
+
+.left-side {
+  top:200px;
+  position: sticky;
+      width: 45%;
+      background-color: #100c08;
+      margin-top: 40px;
+  text-align: right;
+  float: left;
+    }
+    .right-side {
+      height: calc(100vh-180px);
+  flex:1;
+    }
+
+form {
+  margin: 90px auto;
+  color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+	font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+textarea#message {
+	resize:none;
+	height: 150px;
+}
+
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: white;
+  color: #100c08;
+  border: none;
+}
+
+h1{
+  font-size: 4.5rem;
+  color: white;
+}
+
+p img{
+  transition: 0.2s ease-in-out;
+  margin-top: -1rem;
+}
+
+#email-logo{
+  filter: invert(1);
+  margin-right: 50px;
+  width: 35px;
+}
+
+#github3{
+  width: 35px;
+  margin-right: 50px;
+}
+
+#linkedin{
+  width: 33px;
+  filter: invert(1);
+}
+
+p img:hover{
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 576px) {
+
+  button{
+    margin-bottom: 40px;
+  }
+
+  .main-view {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+  }
+  
+ .left-side {
+  top:-250px;
+  position: sticky;
+      width: 100%;
+      background-color: #100c08;
+      margin-top: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+    }
+
+    .left-side h1{
+      font-size: 4rem;
+      margin-bottom: 40px;
+      margin-top: 0;
+      line-height: 4.5rem;
+  }    
+
+    .right-side {
+      width: 100%;
+      height: calc(100vh-180px);
+  flex:1;
+    }
+
+    #email-logo{
+  width: 31px;
+}
+
+#github3{
+  width: 31px;
+}
+
+#linkedin{
+  width: 29px;
+}
+
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  /* CSS rules for medium screens */
+
+   button{
+    margin-bottom: 40px;
+  }
+
+  .main-view {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+  }
+  
+ .left-side {
+  top:-250px;
+  position: sticky;
+      width: 100%;
+      background-color: #100c08;
+      margin-top: 30px;
+  text-align: center;
+  margin-bottom: 100px;
+    }
+
+    .left-side h1{
+      font-size: 5rem;
+}    
+
+    .right-side {
+      width: 100%;
+      height: calc(100vh-180px);
+  flex:1;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* CSS rules for large screens */
+   button{
+    margin-bottom: 40px;
+  }
+
+  .main-view {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+  }
+  
+ .left-side {
+  top:-250px;
+  position: sticky;
+      width: 100%;
+      background-color: #100c08;
+      margin-top: 30px;
+  text-align: center;
+  margin-bottom: 100px;
+    }
+
+   .left-side h1{
+      font-size: 5rem;
+      margin-bottom: 40px;
+}    
+
+    .right-side {
+      width: 100%;
+      height: calc(100vh-180px);
+  flex:1;
+    }
+    p img{
+      transform: scale(1.15);
+     margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* CSS rules for extra-large screens */
+.left-side {
+  top:0;
+  position: sticky;
+      width: 45%;
+      background-color: #100c08;
+      margin-top: -20px;
+  text-align: right;
+  float: left;
+    }
+    .right-side {
+      margin-top: -40px;
+      height: calc(100vh-180px);
+  flex:1;
+    }
+
+}

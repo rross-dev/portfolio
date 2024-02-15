@@ -1,0 +1,230 @@
+body {
+	background-color: #100c08;
+}
+
+main {
+
+}
+
+.container{
+	height: calc(100vh-180px);
+	display: flex;
+}
+
+.left-side{
+	color: white;
+	width: 25%;
+}
+
+.middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.right-side{
+	height: calc(100vh-180px);
+	color: white;
+  width: 25%;
+ }
+
+.right-side h1{
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 1.5rem;
+}
+
+.left-side .text-box{
+padding: 8%;
+}
+
+.right-side .text-box{
+padding: 8%;
+}
+
+.left-side h1{
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 1.5rem;
+}
+
+p{
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+
+ul{
+	line-height: 1rem;
+}
+
+li{
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+
+.right-side h4{
+	margin-bottom: -5px;
+}
+
+.right-side h5{
+	margin-bottom: -15px;
+	font-weight: 500;
+}
+
+.right-side p{
+	margin-bottom: -15px;
+}
+
+#apps {
+  width: 650px;
+  height: auto;
+	filter:invert(0.6);
+}
+
+
+@media only screen and (max-width: 576px) {
+  .container {
+  	padding: 30px;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .left-side, .middle, .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .left-side {
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+  .left-side h1{
+  	margin: 0;
+  }
+
+  .middle{
+    margin-bottom: 60px;
+  }
+
+  .right-side{
+    margin-top: 20px;
+  	margin-bottom: 60px;
+  }
+  .left-side .text-box{
+    padding: 0;
+  }
+
+  .right-side .text-box{
+    padding: 0;
+  }
+
+  #apps {
+  	margin: 0;
+  	width: 100%;
+  	height: auto;
+  	transform: scale(1.25);
+  	
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  /* CSS rules for medium screens */
+
+  .container {
+  	padding: 0px;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .left-side, .middle, .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .left-side, .right-side {
+    margin-top: 10px;
+  }
+  .left-side h1{
+  	margin: 0;
+  }
+  .right-side{
+  	margin-bottom: 80px;
+  }
+
+  #apps {
+    left: 0;
+    right: 0;
+  	margin: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* CSS rules for large screens */
+
+  .container {
+    padding: 30px;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .left-side, .middle, .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .left-side, .right-side {
+    margin-top: 10px;
+  }
+  .left-side h1{
+    margin: 0;
+  }
+  .right-side{
+    margin-bottom: 80px;
+  }
+
+  .middle .image-box{
+    padding: 30px;
+  }
+
+  #apps {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* CSS rules for extra-large screens */
+
+  .container{
+    margin-left: 10px;
+  }
+  .left-side h1{
+    font-size: 1.3rem;
+  }
+  .left-side p{
+    font-size: 0.6rem;
+  }
+  .right-side h1{
+    font-size: 1.3rem;
+  }
+  .right-side h4{
+    font-size: 0.7rem;
+}
+
+.right-side p{
+  font-size: 0.6rem;
+  margin-bottom: -12px;
+}
+
+#apps {
+  width: 550px;
+  height: auto;
+}
+}

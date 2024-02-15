@@ -1,0 +1,56 @@
+.ent-container{
+   margin-top: 10px;
+  margin-bottom: 200px;
+width: 100vw;
+display: flex;
+flex-direction: column;
+}
+
+.q1{
+  margin-top: 50px;
+	color: white;
+  flex: 1;
+  padding-left: 25%;
+  padding-right: 25%;
+  }
+
+  .q1 h1{
+  	font-weight: 600;
+  	font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+  	.ent-container{
+  		flex-direction: column;
+  	}
+    .q1{
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+  }
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+.ent-container{
+      flex-direction: column;
+    }
+
+    .q1{
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* CSS rules for large screens */
+.ent-container{
+      flex-direction: column;
+    }
+
+    .q1{
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
