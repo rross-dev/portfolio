@@ -257,7 +257,7 @@ bottom: 0;
 
 .rtn-arw-inv{
    display: block;
-  position: fixed;
+  position: absolute;
   top: 165px;
   right:35px;
   filter: invert(1);
@@ -312,6 +312,7 @@ bottom: 0;
 .navbar a:active {
   transform: scale(1.1);
   background-color: #8ff80a;
+  transition: 0.1s ease;
 }
 
 
@@ -534,6 +535,9 @@ margin: 20px auto;
   cursor: pointer;
   border: none;
   border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .goofy-vid{
@@ -990,6 +994,20 @@ footer {
   filter: invert(1);
   z-index: 9998;
 }
+
+.navbar a:hover {
+  transform: scale(1.05);
+  background-color: #100c08;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar a:active {
+  transform: scale(1.1);
+  background-color: #100c08;
+  color:white;
+}
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -1042,6 +1060,19 @@ header{
   grid-template-columns: repeat(1, minmax(200px, 1fr));
   pointer-events: none;
 }
+.navbar a:hover {
+  transform: scale(1.05);
+  background-color: #100c08;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar a:active {
+  transform: scale(1.1);
+  background-color: #100c08;
+  color:white;
+}
+
 
 
 }
@@ -1052,4 +1083,18 @@ header{
   font-size: 1rem;
   font-weight: 500;
 }
+.navbar a:hover {
+  transform: scale(1.05);
+  background-color: #100c08;
+  color: white;
+  font-weight: 500;
+  transition: 0.1s ease;
+}
+
+.navbar a:active {
+  transform: scale(1.1);
+  background-color: #100c08;
+  color:white;
+}
+
 }
