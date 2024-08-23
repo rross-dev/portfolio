@@ -933,6 +933,16 @@ nav ul li a.active:hover {
   margin-bottom: 10px;
 }
 
+.project-thumbnails5 {
+  width: auto;
+  display: grid;
+  margin: 100px auto;
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+
 footer {
   display:none;
 }
