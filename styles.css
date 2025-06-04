@@ -200,7 +200,7 @@ nav ul li a.active:hover {
 }
 
 .portfolio-menu{
-width: 100%;
+width: 100vw;
 justify-content: center;
 align-items:center;
 display: flex;
@@ -748,7 +748,7 @@ a:focus{
 }
 
 .portfolio-menu{
-width: 100%;
+width: 100vw;
 justify-content: center;
 align-items:center;
 display: flex;
@@ -1121,7 +1121,5 @@ header{
 .project-thumbnails4 {
   pointer-events: none;
 }
-
-
 
 }
