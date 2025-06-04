@@ -1,0 +1,119 @@
+.skateboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+transition: 0.3s ease-in-out;
+width: 80vw;
+margin: 50px auto;
+}
+
+.skateboard-grid a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.skateboard-grid img {
+  display: block;
+  width: 100%;
+  height: auto; /* Adjust the height to match your desired square size */
+  object-fit: cover;
+  transition: transform 0.2s ease-out;
+}
+
+
+.skateboard-grid a:hover img {
+  transform: scale(1.02);
+}
+
+.skateboard-grid .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  opacity: 0;
+  border-radius: 30px;
+   height: 1.5rem;
+   transition: 0.3s ease-in-out;
+}
+
+.skateboard-grid a:hover .overlay {
+  opacity: 1;
+
+}
+
+.skateboard-grid .overlay-content {
+  text-align: center;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+}
+
+.skateboard-grid .overlay-content h3 {
+  margin-left: 10px;
+  margin-top: 0;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+@media only screen and (max-width: 600px) {
+.skateboard-grid {
+  display: block;
+margin-top: 1rem;
+margin-bottom: 4rem;
+width: auto;
+margin: 100px auto;
+}
+
+.skateboard-grid img {
+  margin-bottom: 3rem;
+}
+.skateboard-grid .overlay-content h3 {
+  margin-left: 10px;
+  margin-top: 0;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+.skateboard-grid {
+  display: block;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+.skateboard-grid img {
+  margin-bottom: 50px;
+}
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+.skateboard-grid {
+  display: block;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+.skateboard-grid img {
+  margin-bottom: 100px;
+}
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+.skateboard-grid {
+  display: block;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+.skateboard-grid img {
+  margin-bottom: 100px;
+}
+}
