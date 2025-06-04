@@ -249,6 +249,7 @@ bottom: 0;
 }
 
 .rtn-arw{
+  width: 19px;
      display: block;
   position: absolute;
   top: 165px;
@@ -257,6 +258,7 @@ bottom: 0;
 }
 
 .rtn-arw-inv{
+  width: 19px;
    display: block;
   position: absolute;
   top: 165px;
