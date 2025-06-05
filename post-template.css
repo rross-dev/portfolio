@@ -51,6 +51,12 @@ body{
     	width: 100px;
     }
 
+     #srf-icon{
+      border-radius: 20px;
+      margin-bottom: -20px;
+      width: 100px;
+    }
+
 
  .right-side {
       height: calc(100vh-180px);

@@ -321,7 +321,7 @@ bottom: 0;
 
 .project-thumbnails {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
 margin-bottom: 5rem;
 cursor: pointer;
 width: 95vw;
@@ -551,6 +551,11 @@ margin: 20px auto;
   border-radius: 5px;
 }
 
+#phonedemo{
+  height: 55vh;
+  padding-left: 150px;
+}
+
 
 #github {
   width: 30px;
@@ -607,6 +612,10 @@ a:focus{
 
 
 @media only screen and (max-width: 600px) {
+
+  #phonedemo{
+  padding-left: 0;
+}
 
 .project-thumbnails5 img {
   width: 72%;
@@ -964,6 +973,10 @@ nav ul li a.active:hover {
     border-bottom: 1px solid rgba(0,0,0,0.2);
   }
 
+    #phonedemo{
+  padding-left: 0;
+}
+
 .dropdown:hover .dropdown-content{
   display: none;
 }
@@ -1035,6 +1048,10 @@ header{
   border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+  #phonedemo{
+  padding-left: 0;
+}
+
 .rtn-arw-inv{
   display: block;
   position: absolute;
@@ -1096,6 +1113,9 @@ header{
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   /* CSS rules for extra-large screens - iPad */
+  #phonedemo{
+    height: 20vh;
+}
 
   .dropdown:hover .dropdown-content{
   display: none;
