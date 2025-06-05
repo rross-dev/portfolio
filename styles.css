@@ -552,8 +552,9 @@ margin: 20px auto;
 }
 
 #phonedemo{
+  border-radius: 30px;
   height: 55vh;
-  padding-left: 150px;
+  margin-left: 150px;
 }
 
 
@@ -610,11 +611,22 @@ a:focus{
     background-color: transparent;
   }
 
+    #demo-mobile-vid{
+  border-radius:5px;
+}
+
 
 @media only screen and (max-width: 600px) {
 
+  #demo-mobile-vid{
+  width: 100%;
+  border-radius: 5px;
+}
+
   #phonedemo{
   padding-left: 0;
+  margin-left:0;
+  width: auto;
 }
 
 .project-thumbnails5 img {
@@ -969,12 +981,20 @@ nav ul li a.active:hover {
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   /* CSS rules for medium screens */
 
+    #demo-mobile-vid{
+  width: 100%;
+  border-radius: 5px;
+}
+
   header{
     border-bottom: 1px solid rgba(0,0,0,0.2);
   }
 
     #phonedemo{
+      border-radius: 30px;
   padding-left: 0;
+  margin-left: 0;
+  width: auto;
 }
 
 .dropdown:hover .dropdown-content{
@@ -1048,8 +1068,15 @@ header{
   border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+#demo-mobile-vid{
+  width: 100%;
+}
+
   #phonedemo{
+    border-radius: 30px;
   padding-left: 0;
+  margin-left:0;
+  width: auto;
 }
 
 .rtn-arw-inv{
@@ -1113,8 +1140,14 @@ header{
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   /* CSS rules for extra-large screens - iPad */
+
+#demo-mobile-vid{
+  width: 100%;
+}
+
   #phonedemo{
-    height: 20vh;
+    border-radius: 20px;
+    height: 22vh;
 }
 
   .dropdown:hover .dropdown-content{
