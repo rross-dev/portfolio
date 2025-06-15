@@ -71,11 +71,11 @@
 body {
   font-family: 'Poppins', sans-serif;
   height: -webkit-fill-available;
-  overflow-x: hidden;
   background-color: white;
   margin: 0;
   padding: 0;
   border: none;
+overflow-x: hidden;
 }
 
 header {
@@ -687,7 +687,7 @@ a:focus{
   }
 
   body{
-    margin-top:40px;
+    margin-top:45px;
   }
 
 .rtn-arw{
